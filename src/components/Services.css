@@ -1,0 +1,93 @@
+
+.services {
+    min-height: 100vh;
+    min-width: 250px;
+    max-width: 1460px;
+    padding: 12rem 7% 10rem;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    margin: 0 auto;
+}
+
+    .services h2 {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .title {
+        font-size: 4.5rem;
+        text-align: center;
+    }
+        .title span {
+            color: var(--main-color);
+        }
+
+    .services_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+        .services_box {
+            flex: 1 1 30rem;
+            background: var(--white-color);
+            padding: 4.7rem 0.5rem 4rem;
+            border-radius: 2rem;
+            box-shadow: 0 .1rem .5rem var(--shadow-color);
+            text-align: center;
+            border-bottom: .6rem solid var(--main-color);
+            transition: .5s ease;
+            width: 37rem;
+            height: 40rem;
+            max-width: 37rem;
+            min-width: 32rem;
+        }
+        .services_box:hover {
+            box-shadow: 0 .1rem 2rem var(--shadow-color);
+            transform: scale(1.02);
+        }
+            .services_box i {
+                font-size: 5rem;
+                color: var(--main-color);
+            }
+            .services_box h3 {
+                font-size: 2.6rem;
+                transition: .5s ease;
+                padding: 1rem;
+            }
+            .services_box:hover h3 {
+                color: var(--main-color);
+            }
+            .services_box p {
+                font-size: 1.6rem;
+                margin: 0.5rem 0.2rem 2rem;
+            }
+                .tech_icons {
+                    display: flex;
+                    justify-content: center;
+                    gap: 0.5rem;
+                    flex-wrap: wrap;
+                }
+                    .tech_icons i{
+                        font-size: 4.5rem;
+                    }
+
+@media (max-width: 1100px) {
+    .services {
+        padding: 10rem 3% 10rem;
+    }
+}
+
+@media (max-width: 630px) {
+    .services_box {
+        width: 100%;
+        height: auto;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 300px) {
+    .services_box {
+        min-width: 28rem;
+    }
+}
