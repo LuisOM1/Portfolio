@@ -256,27 +256,50 @@
         }
 }
 
+@media (max-width: 768px) {
+    .home {
+        padding: 8rem 5% 2rem;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+        .home_content {
+            max-width: 100%;
+            margin-bottom: 3rem;
+            z-index: 10;
+        }
+}
+
 @media (max-width: 450px) {
     .home {
-        padding: 0 0% 0rem;
-        width: 100%;
+        padding: 5rem 2% 0rem;
         overflow-x: hidden;
-        flex-direction: column; 
+        flex-direction: column;
     }
-        .home_content h1 {
-            font-size: 3.5rem;
+        .home_content{
+            margin-top: 50%;
         }
+            .home_content h1 {
+                font-size: 3.5rem;
+            }
         .professions_box {
-            height: 100rem;
+            height: 0px;
         }
         .profession h3 {
             font-size: 2.8rem;
         }
+        .professions_box, .profession, .professions_circle, .home_img img {
+            display: none;
+        }
 
-        .professions_circle {
-            display: none;
+        .home_professions{
+            min-height: auto;
+            transform: translateY(-30%);
         }
-        .profession {
-            display: none;
-        }
-}
+    
+        .overlay {
+            border-top-width: 7rem;
+            border-right-width: 7rem;
+            border-left-width: 7rem;
+            border-bottom-width: 7rem; 
+        } 
+}  
